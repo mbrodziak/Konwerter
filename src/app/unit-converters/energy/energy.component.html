@@ -1,0 +1,55 @@
+<div class="container d-flex justify-content-center middle">
+  <div class="card" style="width: 30rem; box-shadow: 10px 10px 10px 10px grey; margin-top: 30px;">
+      <div class="card-header">
+          Energia
+      </div>
+      <div class="card-body">
+          <label>Kilowatogodzina</label>
+          <input type="text" class="form-control" id="kilowatthour" name="kilowatthour" [(ngModel)]="kilowatthour" #kwt="ngModel" (input)="changeKilowatthour($event)" [value]="kilowatthour"
+          placeholder="kWh" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="kwt.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Watogodzina</label>
+          <input type="text" class="form-control" id="watthour" name="watthour" [(ngModel)]="watthour" #wt="ngModel" (input)="changeWatthour($event)"
+          [value]="watthour" placeholder="Wh" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="wt.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Megadżul</label>
+          <input type="text" class="form-control" id="megajoule" name="megajoule" [(ngModel)]="megajoule" #mega="ngModel" (input)="changeMegajoule($event)" [value]="megajoule"
+          placeholder="MJ" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="mega.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Kilodżul</label>
+          <input type="text" class="form-control" id="kilojoule" name="kilojoule" [(ngModel)]="kilojoule" #kilo="ngModel" (input)="changeKilojoule($event)" [value]="kilojoule"
+          placeholder="kJ" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="kilo.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Dżul</label>
+          <input type="text" class="form-control" id="joule" name="joule" [(ngModel)]="joule" #jou="ngModel" (input)="changeJoule($event)" [value]="joule"
+          placeholder="J" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="jou.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Kilogramometr</label>
+          <input type="text" class="form-control" id="kilogramometter" name="kilogramometter" [(ngModel)]="kilogramometter" #kgm="ngModel" (input)="changeKilogramometter($event)"
+          [value]="kilogramometter" placeholder="KGm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="kgm.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Erg</label>
+          <input type="text" class="form-control" id="erg" name="erg" [(ngModel)]="erg" #e="ngModel" (input)="changeErg($event)" [value]="erg" placeholder="erg"
+          onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57" pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="e.errors">Wprowadź poprawną liczbę!</div><br>
+<!--
+          <label>Elektonowolt</label>
+          <input type="text" class="form-control" id="electronvolt" name="electronvolt" [(ngModel)]="electronvolt" #ev="ngModel" (input)="changeElectronvolt($event)"
+          [value]="electronvolt" placeholder="eH" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div *ngIf="ev.errors">Wprowadź poprawną liczbę!</div><br> -->
+      </div>
+  </div>
+</div>

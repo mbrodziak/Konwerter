@@ -1,0 +1,65 @@
+<label>Bit</label> <br>
+<input type="text" id="bit" name="bit" [(ngModel)]="bit" #bt="ngModel" (input)="changeBit($event)" [value]="bit"
+placeholder="Bit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="bt.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Kilobit</label> <br>
+<input type="text" id="kilobit" name="kilobit" [(ngModel)]="kilobit" #kb="ngModel" (input)="changeKilobit($event)" [value]="kilobit"
+placeholder="Kilobit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="kb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Megabit</label> <br>
+<input type="text" id="megabit" name="megabit" [(ngModel)]="megabit" #mb="ngModel" (input)="changeMegabit($event)" [value]="megabit"
+placeholder="Megabit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="mb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Gigabit</label> <br>
+<input type="text" id="gigabit" name="gigabit" [(ngModel)]="gigabit" #gb="ngModel" (input)="changeGigabit($event)" [value]="gigabit"
+placeholder="Gigabit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="gb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Terabit</label> <br>
+<input type="text" id="terabit" name="terabit" [(ngModel)]="terabit" #tb="ngModel" (input)="changeTerabit($event)" [value]="terabit"
+placeholder="Terabit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="tb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Petabit</label> <br>
+<input type="text" id="petabit" name="petabit" [(ngModel)]="petabit" #pb="ngModel" (input)="changePetabit($event)" [value]="petabit"
+placeholder="Petabit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="pb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Kibibit</label> <br>
+<input type="text" id="kibibit" name="kibibit" [(ngModel)]="kibibit" #kib="ngModel" (input)="changeKibibit($event)" [value]="kibibit"
+placeholder="Kibibit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="kib.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Mebibit</label> <br>
+<input type="text" id="mebibit" name="mebibit" [(ngModel)]="mebibit" #mib="ngModel" (input)="changeMebibit($event)" [value]="mebibit"
+placeholder="Mebibit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="mib.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Gibibit</label> <br>
+<input type="text" id="gibibit" name="gibibit" [(ngModel)]="gibibit" #gib="ngModel" (input)="changeGibibit($event)" [value]="gibibit"
+placeholder="Gibibit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="gib.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Tebibit</label> <br>
+<input type="text" id="tebibit" name="tebibit" [(ngModel)]="tebibit" #tib="ngModel" (input)="changeTebibit($event)" [value]="tebibit"
+placeholder="Tebibit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="tib.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Pebibit</label> <br>
+<input type="text" id="pebibit" name="pebibit" [(ngModel)]="pebibit" #pib="ngModel" (input)="changePebibit($event)" [value]="pebibit"
+placeholder="Pebibit" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="pib.errors">Wprowadź poprawną liczbę!</div><br>

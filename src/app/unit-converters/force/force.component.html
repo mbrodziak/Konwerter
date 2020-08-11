@@ -1,0 +1,56 @@
+<div class="container d-flex justify-content-center middle">
+  <div class="card" style="width: 30rem; box-shadow: 10px 10px 10px 10px grey; margin-top: 30px;">
+      <div class="card-header">
+          Siła
+      </div>
+      <div class="card-body">
+        <label>Kiloniuton</label>
+        <input type="text" class="form-control" id="kilonewton" name="kilonewton" [(ngModel)]="kilonewton" #knew="ngModel" (input)="changeKilonewton($event)" [value]="kilonewton"
+        placeholder="kN" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="knew.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Niuton</label>
+        <input type="text" class="form-control" id="newton" name="newton" [(ngModel)]="newton" #new="ngModel" (input)="changeNewton($event)" [value]="newton"
+        placeholder="N" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="new.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Kilogram-siła</label>
+        <input type="text" class="form-control" id="kilogramForce" name="kilogramForce" [(ngModel)]="kilogramForce" #kgf="ngModel" (input)="changeKilogramForce($event)"
+        [value]="kilogramForce" placeholder="kgf" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="kgf.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Gram-siła</label>
+        <input type="text" class="form-control" id="gramForce" name="gramForce" [(ngModel)]="gramForce" #gf="ngModel" (input)="changeGramForce($event)"
+        [value]="gramForce" placeholder="gf" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="gf.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Funt-siła</label>
+        <input type="text" class="form-control" id="funtForce" name="funtForce" [(ngModel)]="funtForce" #ff="ngModel" (input)="changeFuntForce($event)"
+        [value]="funtForce" placeholder="lbf" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="ff.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Uncja-siła</label>
+        <input type="text" class="form-control" id="ounceForce" name="ounceForce" [(ngModel)]="ounceForce" #ouf="ngModel" (input)="changeOunceForce($event)"
+        [value]="ounceForce" placeholder="ozf" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="ouf.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Poundal</label>
+        <input type="text" class="form-control" id="poundal" name="poundal" [(ngModel)]="poundal" #pdl="ngModel" (input)="changePoundal($event)" [value]="poundal"
+        placeholder="pdl" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="pdl.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Dyna</label>
+        <input type="text" class="form-control" id="dyne" name="dyne" [(ngModel)]="dyne" #dyn="ngModel" (input)="changeDyne($event)" [value]="dyne"
+        placeholder="dyn" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="dyn.errors">Wprowadź poprawną liczbę!</div><br>
+      </div>
+  </div>
+</div>

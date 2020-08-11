@@ -1,21 +1,56 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="home" routerLinkActive="active">Konwerter</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="home" routerLinkActive="active">Strona główna</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Kowertery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" id="pressure" routerLink="pressure" routerLinkActive="active-router">Ciśnienie</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="roman-numerals" routerLink="roman-numerals" routerLinkActive="active-router">Liczby arabskie i rzymskie</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="time" routerLink="time" routerLinkActive="active-router">Czas</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="length" routerLink="length" routerLinkActive="active-router">Długość</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="energy" routerLink="energy" routerLinkActive="active-router">Energia</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="mass" routerLink="mass" routerLinkActive="active-router">Masa</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="power" routerLink="power" routerLinkActive="active-router">Moc</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="digital-memory" routerLink="digital-memory" routerLinkActive="active-router">Pamięć cyfrowa</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="speed" routerLink="speed" routerLinkActive="active-router">Prędkość</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="data-transfer-rate" routerLink="data-transfer-rate" routerLinkActive="active-router">Prędkość przesyłu danych</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="acceleration" routerLink="acceleration" routerLinkActive="active-router">Przyśpieszenie</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="force" routerLink="force" routerLinkActive="active-router">Siła</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="number-systems" routerLink="number-systems" routerLinkActive="active-router">Systemy liczbowe</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="temperature" routerLink="temperature" routerLinkActive="active-router">Temperatura</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 <router-outlet></router-outlet>
+
+<div class="footer bg-dark text-white">
+  Autor: Mateusz Brodziak (matousb96@gmail.com)<br>
+  Copyright &copy; 2019 Dziękuję za wizytę!
+</div>
+
+

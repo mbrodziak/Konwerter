@@ -1,0 +1,64 @@
+<label>Bajt</label> <br>
+<input type="text" id="byte" name="byte" [(ngModel)]="byte" #byt="ngModel" (input)="changeByte($event)" [value]="byte" placeholder="Bajt"
+onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57" pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="byt.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Kilobajt</label> <br>
+<input type="text" id="kilobyte" name="kilobyte" [(ngModel)]="kilobyte" #kb="ngModel" (input)="changeKilobyte($event)" [value]="kilobyte"
+placeholder="Kilobajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="kb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Megabajt</label> <br>
+<input type="text" id="megabyte" name="megabyte" [(ngModel)]="megabyte" #mb="ngModel" (input)="changeMegabyte($event)" [value]="megabyte"
+placeholder="Megabajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="mb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Gigabajt</label> <br>
+<input type="text" id="gigabyte" name="gigabyte" [(ngModel)]="gigabyte" #gb="ngModel" (input)="changeGigabyte($event)" [value]="gigabyte"
+placeholder="Gigabajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="gb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Terabajt</label> <br>
+<input type="text" id="terabyte" name="terabyte" [(ngModel)]="terabyte" #tb="ngModel" (input)="changeTerabyte($event)" [value]="terabyte"
+placeholder="Terabajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="tb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Petabajt</label> <br>
+<input type="text" id="petabyte" name="petabyte" [(ngModel)]="petabyte" #pb="ngModel" (input)="changePetabyte($event)" [value]="petabyte"
+placeholder="Petabajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="pb.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Kibibajt</label> <br>
+<input type="text" id="kibibyte" name="kibibyte" [(ngModel)]="kibibyte" #kib="ngModel" (input)="changeKibibyte($event)" [value]="kibibyte"
+placeholder="Kibibajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="kib.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Mebibajt</label> <br>
+<input type="text" id="mebibyte" name="mebibyte" [(ngModel)]="mebibyte" #mib="ngModel" (input)="changeMebibyte($event)" [value]="mebibyte"
+placeholder="Mebibajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="mib.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Gibibajt</label> <br>
+<input type="text" id="gibibyte" name="gibibyte" [(ngModel)]="gibibyte" #gib="ngModel" (input)="changeGibibyte($event)" [value]="gibibyte"
+placeholder="Gibibajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="gib.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Tebibajt</label> <br>
+<input type="text" id="tebibyte" name="tebibyte" [(ngModel)]="tebibyte" #tib="ngModel" (input)="changeTebibyte($event)" [value]="tebibyte"
+placeholder="Tebibajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="tib.errors">Wprowadź poprawną liczbę!</div><br>
+
+<label>Pebibajt</label> <br>
+<input type="text" id="pebibyte" name="pebibyte" [(ngModel)]="pebibyte" #pib="ngModel" (input)="changePebibyte($event)" [value]="pebibyte"
+placeholder="Pebibajt" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+pattern="^[0-9]+[\.]?[0-9]*[e]?[-+]?[0-9]*$"><br>
+<div *ngIf="pib.errors">Wprowadź poprawną liczbę!</div><br>

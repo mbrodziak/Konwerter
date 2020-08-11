@@ -1,0 +1,43 @@
+<div class="container d-flex justify-content-center middle">
+  <div class="card" style="width: 30rem; box-shadow: 10px 10px 10px 10px grey; margin-top: 30px;">
+    <div class="card-header">
+        Temperatura
+    </div>
+    <div class="card-body">
+        Dokładność do
+        <select id="round" name="round">
+          <option [value]="0">0</option>
+          <option [value]="1">1</option>
+          <option [value]="2" selected>2</option>
+          <option [value]="3">3</option>
+          <option [value]="4">4</option>
+          <option [value]="5">5</option>
+          <option [value]="6">6</option>
+        </select>
+        miejsca/miejsc po przecinku <br><br>
+      <label>Celsjusz</label>
+      <input type="text" class="form-control" id="celcius" name="celcius" [(ngModel)]="celsius" #cel="ngModel" (input)="changeCelcius($event)" [value]="celsius"
+      placeholder="°C" onkeypress="return event.charCode == 45 || event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[-]?[0-9]+[\\.]?[0-9]*$">
+      <div class="error" *ngIf="cel.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Fahrenheit</label>
+      <input type="text" class="form-control" id="fahrenheit" name="fahrenheit" [(ngModel)]="fahrenheit" #fah="ngModel" (input)="changeFahrenheit($event)" [value]="fahrenheit"
+      placeholder="°F" onkeypress="return event.charCode == 45 || event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[-]?[0-9]+[\\.]?[0-9]*$">
+      <div class="error" *ngIf="fah.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Kelwin</label>
+      <input type="text" class="form-control" id="kelvin" name="kelvin" [(ngModel)]="kelvin" #kel="ngModel" (input)="changeKelvin($event)" [value]="kelvin" placeholder="°K"
+      onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57" pattern="^[0-9]+[\\.]?[0-9]*$">
+      <div class="error" *ngIf="kel.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Rankine</label>
+      <input type="text" class="form-control" id="rankine" name="rankine" [(ngModel)]="rankine" #ran="ngModel" (input)="changeRankine($event)" [value]="rankine"
+      placeholder="°R" onkeypress="return event.charCode == 45 || event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[-]?[0-9]+[\\.]?[0-9]*$">
+      <div class="error" *ngIf="ran.errors">Wprowadź poprawną liczbę!</div><br>
+    </div>
+  </div>
+</div>
+

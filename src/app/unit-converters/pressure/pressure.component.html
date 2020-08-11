@@ -1,0 +1,56 @@
+<div class="container d-flex justify-content-center middle">
+  <div class="card" style="width: 30rem; box-shadow: 10px 10px 10px 10px grey; margin-top: 30px;">
+      <div class="card-header">
+          Ciśnienie
+      </div>
+      <div class="card-body">
+          <label>Megapaskal (Niuton na milimetr<sup>2</sup>)</label>
+          <input type="text" class="form-control" id="megapascal" name="megapascal" [(ngModel)]="megapascal" #mpas="ngModel" (input)="changeMegapascal($event)" [value]="megapascal"
+          placeholder="mPa" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="mpas.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Bar</label>
+          <input type="text" class="form-control" id="bar" name="bar" [(ngModel)]="bar" #ba="ngModel" (input)="changeBar($event)" [value]="bar"
+          placeholder="bar" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="ba.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Kilopaskal (Kiloniuton na metr<sup>2</sup>)</label>
+          <input type="text" class="form-control" id="kilopascal" name="kilopascal" [(ngModel)]="kilopascal" #kpas="ngModel" (input)="changeKilopascal($event)"
+          [value]="kilopascal" placeholder="kPa" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="kpas.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Hektopaskal (Milibar)</label>
+          <input type="text" class="form-control" id="hectopascal" name="hectopascal" [(ngModel)]="hectopascal" #hpas="ngModel" (input)="changeHectopascal($event)" [value]="hectopascal"
+          placeholder="hPa" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="hpas.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Paskal (Niuton na metr<sup>2</sup>)</label>
+          <input type="text" class="form-control" id="pascal" name="pascal" [(ngModel)]="pascal" #pas="ngModel" (input)="changePascal($event)" [value]="pascal"
+          placeholder="Pa" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="pas.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Atmosfera fizyczna</label>
+          <input type="text" class="form-control" id="physicalAtmosphere" name="physicalAtmosphere" [(ngModel)]="physicalAtmosphere" #atm="ngModel" (input)="changePhysicalAtmosphere($event)"
+          [value]="physicalAtmosphere" placeholder="atm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="atm.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Atmosfera techniczna</label>
+          <input type="text" class="form-control" id="technicalAtmosphere" name="technicalAtmosphere" [(ngModel)]="technicalAtmosphere" #at="ngModel" (input)="changeTechnicalAtmosphere($event)"
+          [value]="technicalAtmosphere" placeholder="at" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="at.errors">Wprowadź poprawną liczbę!</div><br>
+
+          <label>Tor</label>
+          <input type="text" class="form-control" id="tor" name="tor" [(ngModel)]="tor" #t="ngModel" (input)="changeTor($event)" [value]="tor"
+          placeholder="Tr" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+          pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+          <div class="error" *ngIf="t.errors">Wprowadź poprawną liczbę!</div><br>
+      </div>
+  </div>
+</div>

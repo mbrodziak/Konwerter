@@ -1,0 +1,73 @@
+<div class="container d-flex justify-content-center middle">
+  <div class="card" style="width: 30rem; box-shadow: 10px 10px 10px 10px grey; margin-top: 30px;">
+    <div class="card-header">
+        Długość
+    </div>
+    <div class="card-body">
+      <label>Terametry</label>
+      <input type="text" class="form-control" id="terameter" name="terameter" [(ngModel)]="terameter" #tera="ngModel" (input)="changeTerameters($event)" [value]="terameter"
+      placeholder="Tm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="tera.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Gigametry</label>
+      <input type="text" class="form-control" id="gigameter" name="gigameter" [(ngModel)]="gigameter" #giga="ngModel" (input)="changeGigameters($event)" [value]="gigameter"
+      placeholder="Gm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="giga.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Megametry</label>
+      <input type="text" class="form-control" id="megameter" name="megameter" [(ngModel)]="megameter" #mega="ngModel" (input)="changeMegameters($event)" [value]="megameter"
+      placeholder="Mm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="mega.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Kilometry</label>
+      <input type="text" class="form-control" id="kilometer" name="kilometer" [(ngModel)]="kilometer" #kilo="ngModel" (input)="changeKilometers($event)" [value]="kilometer"
+      placeholder="km" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="kilo.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Hektometr</label>
+      <input type="text" class="form-control" id="hectometer" name="hectometer" [(ngModel)]="hectometer" #hecto="ngModel" (input)="changeHectometers($event)"
+      [value]="hectometer" placeholder="hm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="hecto.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Metry</label>
+      <input type="text" class="form-control" id="meter" name="meter" [(ngModel)]="meter" #met="ngModel" (input)="changeMeters($event)" [value]="meter" placeholder="m"
+      onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57" pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="met.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Decymetry</label>
+      <input type="text" class="form-control" id="decimeter" name="decimeter" [(ngModel)]="decimeter" #deci="ngModel" (input)="changeDecimeters($event)" [value]="decimeter"
+      placeholder="dm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="deci.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Centymetry</label>
+      <input type="text" class="form-control" id="centimeter" name="centimeter" [(ngModel)]="centimeter" #centi="ngModel" (input)="changeCentimeters($event)"
+      [value]="centimeter" placeholder="cm"onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="centi.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Milimetry</label>
+      <input type="text" class="form-control" id="millimeter" name="millimeter" [(ngModel)]="millimeter" #milli="ngModel" (input)="changeMillimeters($event)"
+      [value]="millimeter" placeholder="mm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="milli.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Mikrometry</label>
+      <input type="text" class="form-control" id="micrometer" name="micrometer" [(ngModel)]="micrometer" #micro="ngModel" (input)="changeMicrometers($event)"
+      [value]="micrometer" placeholder="µm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="micro.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>Nanometry</label>
+      <input type="text" class="form-control" id="nanometer" name="nanometer" [(ngModel)]="nanometer" #nano="ngModel" (input)="changeNanometers($event)" [value]="nanometer"
+      placeholder="nm" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+      <div class="error" *ngIf="nano.errors">Wprowadź poprawną liczbę!</div><br>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,63 @@
+<div class="container d-flex justify-content-center middle">
+    <div class="card" style="width: 30rem; box-shadow: 10px 10px 10px 10px grey; margin-top: 30px;">
+        <div class="card-header">
+            Czas
+        </div>
+        <div class="card-body">
+            <label>Rok</label>
+            <input type="text" class="form-control" id="year" name="year" [(ngModel)]="year" #yea="ngModel" (input)="changeYears($event)" [value]="year"
+            placeholder="Rok" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="yea.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Rok przestępny</label>
+            <input type="text" class="form-control" id="leapYear" name="leapYear" [(ngModel)]="leapYear" #leap="ngModel" (input)="changeLeapYears($event)" [value]="leapYear"
+            placeholder="Rok przestępny" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="leap.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Miesiąc</label>
+            <input type="text" class="form-control" id="month" name="month" [(ngModel)]="month" #mon="ngModel" (input)="changeMonths($event)" [value]="month"
+            placeholder="Miesiąc" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="mon.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Tydzień</label>
+            <input type="text" class="form-control" id="week" name="week" [(ngModel)]="week" #wee="ngModel" (input)="changeWeeks($event)" [value]="week"
+            placeholder="Tydzień" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="wee.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Dzień</label>
+            <input type="text" class="form-control" id="day" name="day" [(ngModel)]="day" #da="ngModel" (input)="changeDays($event)" [value]="day"
+            placeholder="Dzień" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="da.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Godzina</label>
+            <input type="text" class="form-control" id="hour" name="hour" [(ngModel)]="hour" #hou="ngModel" (input)="changeHours($event)"
+            [value]="hour" placeholder="Godzina" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="hou.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Minuta</label>
+            <input type="text" class="form-control" id="minute" name="minute" [(ngModel)]="minute" #min="ngModel" (input)="changeMinutes($event)" [value]="minute"
+            placeholder="Minuta" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="min.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Sekunda</label>
+            <input type="text" class="form-control" id="second" name="second" [(ngModel)]="second" #sec="ngModel" (input)="changeSeconds($event)" [value]="second"
+            placeholder="Sekunda" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="sec.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Milisekunda</label>
+            <input type="text" class="form-control" id="millisecond" name="millisecond" [(ngModel)]="millisecond" #mil="ngModel" (input)="changeMilliseconds($event)"
+            [value]="millisecond" placeholder="Milisekunda" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="mil.errors">Wprowadź poprawną liczbę!</div><br>
+        </div>
+    </div>
+</div>
+

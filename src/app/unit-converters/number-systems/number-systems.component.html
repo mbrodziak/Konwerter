@@ -1,0 +1,39 @@
+<div class="container d-flex justify-content-center middle">
+  <div class="card" style="width: 30rem; box-shadow: 10px 10px 10px 10px grey; margin-top: 30px;">
+    <div class="card-header">
+        Systemy liczbowe
+    </div>
+    <div class="card-body">
+      <label>System dziesiętny</label>
+      <input type="text" class="form-control" id="decimal" name="decimal" [(ngModel)]="decimal" #dec="ngModel" (input)="changeDecimal($event)" [value]="decimal"
+      placeholder="Liczba dziesiętna" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+      pattern="^[-]?[0-9]+[\\.]?[0-9]*$">
+      <div class="error" *ngIf="dec.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>System dwójkowy</label>
+      <input type="text" class="form-control" id="binary" name="binary" [(ngModel)]="binary" #bin="ngModel" (input)="changeBinary($event)" [value]="binary"
+      placeholder="Liczba binarna" onkeypress="return event.charCode == 46 || event.charCode == 48 || event.charCode == 49"
+      pattern="^[0-1]+[\\.]?[0-1]*$">
+      <div class="error" *ngIf="bin.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>System ósemkowy</label>
+      <input type="text" class="form-control" id="octal" name="octal" [(ngModel)]="octal" #oct="ngModel" (input)="changeOctal($event)" [value]="octal"
+      placeholder="Liczba binarna"onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 55"
+      pattern="^[0-7]+[\\.]?[0-7]*$">
+      <div class="error" *ngIf="oct.errors">Wprowadź poprawną liczbę!</div><br>
+
+      <label>System szestnastkowy</label>
+      <input type="text" class="form-control" id="hexadecimal" name="hexadecimal" [(ngModel)]="hexadecimal" #hex="ngModel" (input)="changeHexadecimal($event)" [value]="hexadecimal"
+      placeholder="Liczba heksadecymalna" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57
+      || event.charCode >= 65 && event.charCode <= 70" pattern="^[0-9A-F]+[\\.]?[0-9A-F]*$">
+      <div class="error" *ngIf="hex.errors">Wprowadź poprawną liczbę!</div><br>
+<!--
+      <label>Liczba IEEE754</label>
+      <input type="text" class="form-control" id="ieee" name="ieee" [(ngModel)]="ieee" #iee="ngModel" (input)="changeIEEENumber($event)" [value]="ieee"
+      placeholder="Liczba IEEE754" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57
+      || event.charCode >= 65 && event.charCode <= 70">
+      <div class="error" *ngIf="iee.errors">Wprowadź poprawną liczbę!</div><br> -->
+    </div>
+  </div>
+</div>
+

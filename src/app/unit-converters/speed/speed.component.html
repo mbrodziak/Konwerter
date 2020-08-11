@@ -1,0 +1,62 @@
+<div class="container d-flex justify-content-center middle">
+  <div class="card" style="width: 30rem; box-shadow: 10px 10px 10px 10px grey; margin-top: 30px;">
+      <div class="card-header">
+          Prędkość
+      </div>
+      <div class="card-body">
+        <label>Kilometr na sekundę</label>
+        <input type="text" class="form-control" id="kilometterSecond" name="kilometterSecond" [(ngModel)]="kilometterSecond" #kms="ngModel" (input)="changeKilometterSecond($event)"
+        [value]="kilometterSecond" placeholder="km/s" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="kms.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Metr na sekundę</label>
+        <input type="text" class="form-control" id="metterSecond" name="metterSecond" [(ngModel)]="metterSecond" #ms="ngModel" (input)="changeMetterSecond($event)" [value]="metterSecond"
+        placeholder="m/s" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="ms.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Kilometr na godzinę</label>
+        <input type="text" class="form-control" id="kilometterHour" name="kilometterHour" [(ngModel)]="kilometterHour" #kmh="ngModel" (input)="changeKilometterHour($event)" [value]="kilometterHour"
+        placeholder="km/h" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="kmh.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Mila na sekundę</label>
+        <input type="text" class="form-control" id="mileSecond" name="mileSecond" [(ngModel)]="mileSecond" #miS="ngModel" (input)="changeMileSecond($event)" [value]="mileSecond"
+        placeholder="mi/s" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="miS.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Mila na godzinę</label>
+        <input type="text" class="form-control" id="mileHour" name="mileHour" [(ngModel)]="mileHour" #mih="ngModel" (input)="changeMileHour($event)"
+        [value]="mileHour" placeholder="mi/h" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="mih.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Stopa na sekundę</label>
+        <input type="text" class="form-control" id="footSecond" name="footSecond" [(ngModel)]="footSecond" #fts="ngModel" (input)="changeFootSecond($event)"
+        [value]="footSecond" placeholder="ft/s" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="fts.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Prędkość światła</label>
+        <input type="text" class="form-control" id="speedLight" name="speedLight" [(ngModel)]="speedLight" #sl="ngModel" (input)="changeSpeedLight($event)"
+        [value]="speedLight" placeholder="c" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="sl.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Mach</label>
+        <input type="text" class="form-control" id="mach" name="mach" [(ngModel)]="mach" #ma="ngModel" (input)="changeMach($event)"
+        [value]="mach" placeholder="ma" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="ma.errors">Wprowadź poprawną liczbę!</div><br>
+
+        <label>Węzęł</label>
+        <input type="text" class="form-control" id="knot" name="knot" [(ngModel)]="knot" #kn="ngModel" (input)="changeKnot($event)"
+        [value]="knot" placeholder="kn" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+        pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+        <div class="error" *ngIf="kn.errors">Wprowadź poprawną liczbę!</div><br>
+      </div>
+  </div>
+</div>

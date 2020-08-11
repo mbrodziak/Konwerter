@@ -1,1 +1,359 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin:0;
+  padding:0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #dddddd!important;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100%;
+  position:relative;
+
+}
+
+.active-router {
+  background-color: #cccccc!important;
+}
+
+#acceleration:active,
+#data-transfer-rate:active,
+#digital-memory:active,
+#energy:active,
+#force:active,
+#length:active,
+#mass:active,
+#number-systems:active,
+#power:active,
+#pressure:active,
+#roman-numerals:active,
+#speed:active,
+#temperature:active,
+#time:active
+{
+  background-color: #dddddd;
+  color: black;
+}
+
+.middle {
+  padding-bottom: 125px;
+}
+
+a {
+  color: black;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.error {
+  color: red;
+}
+
+.image {
+  margin-right: 10px;
+}
+
+.rowOne {
+  margin-top: 50px;
+}
+
+.typeImage
+{
+	overflow: hidden;
+}
+
+.typeImage img
+{
+	transition: all 0.5s ease-in-out;
+}
+
+.typeImage:hover img
+{
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+	-ms-transform: scale(1.15);
+}
+
+.image p {
+  text-align: center;
+  background-color: #cccccc;
+  padding: 5px;
+}
+
+.headerMeeting {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+  padding: 15px;
+  margin-top: 140px;
+}
+
+@media all and (min-width: 1200px)
+{
+  html
+  {
+    font-size: 16px;
+  }
+
+  .typeImage img {
+    width: 241px;
+    height: 139px;
+  }
+
+  .image p {
+    font-size: 16px;
+  }
+
+  #small {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 1199px)
+{
+  html
+  {
+    font-size: 15px;
+  }
+
+  .typeImage img {
+    width: 280px;
+    height: 188px;
+  }
+
+  .image p {
+    font-size: 17px;
+  }
+
+  #small {
+    font-size: 13px;
+  }
+}
+
+
+@media all and (max-width: 999px)
+{
+  html
+  {
+    font-size: 13px;
+  }
+
+  .typeImage img {
+    width: 300px;
+    height: 198px;
+  }
+
+  .image p {
+    font-size: 16px;
+  }
+
+  #small {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 799px)
+{
+  html
+  {
+    font-size: 13px;
+  }
+
+  .typeImage img {
+    width: 234px;
+    height: 132px;
+  }
+
+  .image p {
+    font-size: 15px;
+  }
+
+  #small {
+    font-size: 11px;
+  }
+}
+
+
+@media all and (max-width: 649px)
+{
+  html
+  {
+    font-size: 13px;
+  }
+
+  .typeImage img {
+    width: 400px;
+    height: 298px;
+  }
+
+  .image p {
+    font-size: 18px;
+  }
+
+  #small {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 449px)
+{
+  html
+  {
+    font-size: 12px;
+  }
+
+  .rowOne {
+    margin-top: 30px;
+  }
+
+  .typeImage img {
+    width: 350px;
+    height: 248px;
+  }
+
+  .image p {
+    font-size: 17px;
+  }
+
+  #small {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 399px)
+{
+  html
+  {
+    font-size: 11px;
+  }
+
+  .rowOne {
+    margin-top: 25px;
+  }
+
+  .typeImage img {
+    width: 300px;
+    height: 198px;
+  }
+
+  .image p {
+    font-size: 14px;
+  }
+
+  .headerMeeting {
+    margin-bottom: 10px;
+  }
+
+  .middle {
+    padding-bottom: 100px;
+  }
+
+  #small {
+    font-size: 10px;
+  }
+}
+
+@media all and (max-width: 349px)
+{
+  html
+  {
+    font-size: 8px;
+  }
+
+  .rowOne {
+    margin-top: 25px;
+  }
+
+  .typeImage img {
+    width: 250px;
+    height: 148px;
+  }
+
+  .image p {
+    font-size: 11px;
+  }
+
+  .middle {
+    padding-bottom: 80px;
+  }
+
+  #small {
+    font-size: 7px;
+  }
+}
+
+
+@media all and (max-width: 279px)
+{
+
+  html
+  {
+    font-size: 7px;
+  }
+
+  .rowOne {
+    margin-top: 20px;
+  }
+
+  .typeImage img {
+    width: 200px;
+    height: 98px;
+  }
+
+  .image p {
+    font-size: 10px;
+  }
+
+  .middle {
+    padding-bottom: 70px;
+  }
+
+  #small {
+    font-size: 6px;
+  }
+}
+
+@media all and (max-width: 219px)
+{
+  html
+  {
+    font-size: 6px;
+  }
+
+  .rowOne {
+    margin-top: 20px;
+  }
+
+  .typeImage img {
+    width: 150px;
+    height: 48px;
+  }
+
+  .image p {
+    font-size: 8px;
+  }
+
+  .middle {
+    padding-bottom: 70px;
+  }
+
+  #small {
+    font-size: 4px;
+  }
+}

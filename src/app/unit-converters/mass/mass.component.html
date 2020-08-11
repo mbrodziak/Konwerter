@@ -1,0 +1,73 @@
+<div class="container d-flex justify-content-center middle">
+    <div class="card" style="width: 30rem; box-shadow: 10px 10px 10px 10px grey; margin-top: 30px;">
+        <div class="card-header">
+            Masa
+        </div>
+        <div class="card-body">
+            <label>Teragram</label>
+            <input type="text" class="form-control" id="teragram" name="teragram" [(ngModel)]="teragram" #tera="ngModel" (input)="changeTeragrams($event)" [value]="teragram"
+            placeholder="Tg" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="tera.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Gigagram</label>
+            <input type="text" class="form-control" id="gigagram" name="gigagram" [(ngModel)]="gigagram" #giga="ngModel" (input)="changeGigagrams($event)" [value]="gigagram"
+            placeholder="Gg" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="giga.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Megagram / Tona</label>
+            <input type="text" class="form-control" id="megagram" name="megagram" [(ngModel)]="megagram" #mega="ngModel" (input)="changeMegagrams($event)" [value]="megagram"
+            placeholder="Mg / t" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="mega.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Kilogram</label>
+            <input type="text" class="form-control" id="kilogram" name="kilogram" [(ngModel)]="kilogram" #kilo="ngModel" (input)="changeKilograms($event)" [value]="kilogram"
+            placeholder="kg" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="kilo.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Hektogram</label>
+            <input type="text" class="form-control" id="hectogram" name="hectogram" [(ngModel)]="hectogram" #hecto="ngModel" (input)="changeHectograms($event)"
+            [value]="hectogram" placeholder="hg" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="hecto.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Dekagram</label>
+            <input type="text" class="form-control" id="decagram" name="decagram" [(ngModel)]="decagram" #deca="ngModel" (input)="changeDecagrams($event)" [value]="decagram"
+            placeholder="dag" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="deca.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Gram</label>
+            <input type="text" class="form-control" id="gram" name="gram" [(ngModel)]="gram" #met="ngModel" (input)="changeGrams($event)" [value]="gram" placeholder="g"
+            onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57" pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="met.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Decygram</label>
+            <input type="text" class="form-control" id="decigram" name="decigram" [(ngModel)]="decigram" #deci="ngModel" (input)="changeDecigrams($event)" [value]="decigram"
+            placeholder="dg" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="deci.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Centygram</label>
+            <input type="text" class="form-control" id="centigram" name="centigram" [(ngModel)]="centigram" #centi="ngModel" (input)="changeCentigrams($event)"
+            [value]="centigram" placeholder="cg" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="centi.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Miligram</label>
+            <input type="text" class="form-control" id="milligram" name="milligram" [(ngModel)]="milligram" #milli="ngModel" (input)="changeMilligrams($event)"
+            [value]="milligram" placeholder="mg" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="milli.errors">Wprowadź poprawną liczbę!</div><br>
+
+            <label>Nanogram</label>
+            <input type="text" class="form-control" id="nanogram" name="nanogram" [(ngModel)]="nanogram" #nano="ngModel" (input)="changeNanograms($event)" [value]="nanogram"
+            placeholder="ng" onkeypress="return event.charCode == 46 || event.charCode >= 48 && event.charCode <= 57"
+            pattern="^[0-9]+[\\.]?[0-9]*[e]?[-+]?[0-9]*$">
+            <div class="error" *ngIf="nano.errors">Wprowadź poprawną liczbę!</div><br>
+        </div>
+    </div>
+</div>
